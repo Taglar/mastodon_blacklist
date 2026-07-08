@@ -2,6 +2,7 @@
 
 -----------------------------------
  Disclaimer: Erstellt mit ChatGPT
+ Läuft bei mir aktuell auf Ubuntu
 -----------------------------------
 
 Automatisierte, konservative Domain-Moderation für Mastodon mit:
