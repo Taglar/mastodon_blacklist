@@ -1,0 +1,5 @@
+domain,severity
+__MASTODON_DOMAIN__,noop
+mastodon.social,noop
+chaos.social,noop
+troet.cafe,noop

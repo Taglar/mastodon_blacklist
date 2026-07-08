@@ -1,0 +1,13 @@
+[Unit]
+Description=Sync Mastodon domain blocklist with FediBlockHole
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=fediblock
+Group=fediblock
+EnvironmentFile=/etc/fediblockhole.env
+ExecStartPre=/usr/local/bin/update-oliphant-fediblockhole.sh
+ExecStart=/opt/fediblockhole/venv/bin/fediblock-sync -c /etc/fediblockhole.conf.toml
+ExecStartPost=/usr/local/bin/mastodon-promote-domain-blocks.py

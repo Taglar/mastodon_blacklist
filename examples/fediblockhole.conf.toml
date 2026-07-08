@@ -1,0 +1,28 @@
+# /etc/fediblockhole.conf.toml
+
+save_intermediate = true
+savedir = "/var/lib/fediblockhole"
+blocklist_savefile = "/var/lib/fediblockhole/merged_blocklist.csv"
+blocklist_auditfile = "/var/log/fediblockhole/fediblockhole-audit.csv"
+
+# max = bei mehreren Quellen gewinnt die strengere Severity.
+mergeplan = "max"
+
+# Oliphant wird lokal vorverarbeitet, weil der Original-Header mit # beginnt.
+blocklist_url_sources = [
+  { url = "file:///var/lib/fediblockhole/sources/oliphant-tier0-fediblockhole.csv", format = "csv", max_severity = "silence" }
+]
+
+blocklist_instance_destinations = [
+  {
+    domain = "__MASTODON_DOMAIN__",
+    token_env_var = "MASTODON_FEDIBLOCK_TOKEN",
+    import_fields = ["public_comment", "private_comment"],
+    max_severity = "silence",
+    max_followed_severity = "silence"
+  }
+]
+
+allowlist_url_sources = [
+  { url = "file:///etc/fediblockhole-allowlist.csv", format = "csv" }
+]
