@@ -1,5 +1,9 @@
 # Mastodon FediBlock Automation
 
+-----------------------------------
+ Disclaimer: Erstellt mit ChatGPT
+-----------------------------------
+
 Automatisierte, konservative Domain-Moderation für Mastodon mit:
 
 - [FediBlockHole](https://github.com/eigenmagic/fediblockhole)
