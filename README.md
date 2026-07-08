@@ -392,9 +392,6 @@ Hinweis: Die Deinstallation entfernt die lokale Automation. Bereits in Mastodon 
 ---
 
 ## Sicherheitshinweise
-
-- Den API Token niemals ins Git-Repo committen.
-- Nach versehentlichem Veröffentlichen den Token sofort in Mastodon widerrufen.
 - Vor dem ersten produktiven Lauf immer einen Dry-Run ausführen.
 - `suspend` nur über eine bewusst gepflegte eigene Liste verwenden.
 - Die eigene Mastodon-Instanz immer in die Allowlist aufnehmen.
