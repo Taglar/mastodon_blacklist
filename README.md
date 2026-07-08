@@ -85,7 +85,7 @@ Oder lokal aus dem geklonten Repository:
 
 ```bash
 git clone https://github.com/Taglar/mastodon_blacklist.git
-cd DEIN_REPO
+cd mastodon_blacklist
 sudo ./install.sh
 ```
 
