@@ -78,13 +78,13 @@ Die Datei bekommt die Rechte `0640 root:fediblock`.
 Wenn du das Projekt auf GitHub/Gitea/GitLab hochgeladen hast, kannst du den Installer so ausführen:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/DEIN_USER/DEIN_REPO/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/Taglar/mastodon_blacklist/main/install.sh | sudo bash
 ```
 
 Oder lokal aus dem geklonten Repository:
 
 ```bash
-git clone https://github.com/DEIN_USER/DEIN_REPO.git
+git clone https://github.com/Taglar/mastodon_blacklist.git
 cd DEIN_REPO
 sudo ./install.sh
 ```
